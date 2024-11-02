@@ -8,10 +8,16 @@ const App = () => {
       <View>
         <StatusBar style="auto" />
         <Text>Open up App.js to start working on your app!!!!!!!!!!!</Text>
-        <Text>Open up App.js to start working on your app!!!!!!!!!!!</Text>
+        <Greeting name='Emrys' />
       </View>
     </SafeAreaView>
   );
+}
+
+const Greeting = props => {
+  return (
+    <Text>Hello, {props.name}!</Text>
+  )
 }
 
 export default App;
@@ -19,7 +25,7 @@ export default App;
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: 'blue',
+    backgroundColor: 'white',
     // alignItems: 'center',
     // justifyContent: 'center',
   },
